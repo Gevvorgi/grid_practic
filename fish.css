@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  background-image: url(https://avatars.mds.yandex.net/get-images-cbir/2384459/--98JVGfIpqjd2LKfgSOvQ249/ocr);
+  background-position: center center;
+  background-size: cover;
+  background-color: #492ba7;
+  background-blend-mode: overlay;
+  font-family: "Poppins", sans-serif;
+  font-size: 57px;
+  font-weight: 300;
+  color: #f4f7f6;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 147px;
+}
+.logo {
+  margin-right: 470px;
+}
+.menu__list {
+  display: inline-block;
+  margin-right: 112px;
+}
+.menu__link {
+    transition: all 0.3s;
+}
+/* .menu__link:hover {
+  font-size: 1.1em;
+} */
+.search-wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 647px;
+  height: 78px;
+  width: 100%;
+}
+.search {
+  display: block;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 32px;
+  background: transparent;
+  border: 3px solid #ffffff;
+  font-size: inherit;
+  color: inherit;
+  padding-left: 70px;
+}
+.search:focus {
+    outline: none;
+}
+.search-submit {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  text-align: center;
+  margin-top: -18px;
+  border: none;
+  background: none;
+}
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  padding: 0 110px 118px 135px;
+  position: relative;
+}
+.main-info {
+  max-width: 1640px;
+  padding-top: 170px;
+}
+.main-info::after {
+    content: url(fish-vector.svg);
+    position: absolute;
+    bottom: 118px;
+    left: 0;
+}
+.title-container {
+    margin-bottom: 95px;
+  padding: 61px 0 56px 69px;
+  border-left: 20px solid #e0672b;
+  color: #ffffff;
+}
+.title {
+  font-size: 142px;
+  font-weight: 700;
+  line-height: 150px;
+}
+.title-text {
+  font-size: 86px;
+}
+.text-container {
+  max-width: 1236px;
+  padding-left: 91px;
+}
+.text {
+  font-size: 36px;
+}
+.form-container {
+  max-width: 1380px;
+  padding: 95px 104px 113px 72px;
+  border: 5px solid #ffffff;
+  position: relative;
+}
+.form-container::before{
+    content: url(cross.svg);
+    position: absolute;
+    top: 0;
+    right: -8%;
+}
+.form-container::after{
+    content: url(cross.svg);
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+}
+.form {
+  display: grid;
+  gap: 20px 22.5px;
+}
+.form__card {
+    margin-bottom: 68px;
+  grid-column: span 3;
+}
+.form__date {
+  grid-column: span 1;
+}
+.form__center {
+  grid-column: span 2;
+}
+.form__label {
+    font-size: 47px;
+    color: #ffffff;
+}
+.form__input {
+  display: block;
+  width: 99%;
+  height: 116px;
+  margin-top: 30px;
+  padding: 40px;
+  border: 3px solid #ffffff;
+  background: transparent;
+  font-size: 47px;
+  color: #ffffff;
+}
+.form__input:focus {
+    outline: none;
+}
+.form__input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+.btn {
+    width: 413px;
+    height: 89px;
+    font-family: inherit;
+    font-size: 59px;
+    color: #f4f7f6;
+    text-transform: uppercase;
+    background: #ff6721;
+    border: none;
+}
+.form-container>.text {
+    margin-bottom: 85px;
+    font-size: 33px;
+}
